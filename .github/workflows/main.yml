@@ -6,29 +6,29 @@ on:
   push:
   
 jobs:
-  print_date_ubutu:
+  print_date_ubuntu:
     name: Print date Ubuntu!
     runs-on: ubuntu-latest
     
-    steps
-      -name: Print Ubuntu:
-       run: 'date'
+    steps:
+      - name: Print Ubuntu!
+        run: date
       
   print_date_windows:
     name: Print date Windows!
     runs-on: windows-latest
     
     steps:
-      -name: Print Windows!
-        run:'date'
+      - name: Print Windows!
+        run: date
         
   print_date_macos:
     name: Print MacOs!
     runs-on: macos-latest
     
     steps:
-      -name: Print MacOS!
-        run:'date'
+      - name: Print MacOS!
+        run: date
        
   print_date_fim:
     name: Print date final!
@@ -40,8 +40,8 @@ jobs:
       - print_date_macos
       
     steps:
-      -name: Print date final!
-       run: date
+      - name: Print date final!
+        run: date
     
   
 
